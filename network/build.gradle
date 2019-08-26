@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation Deps.appCompact
+    implementation Deps.ktx
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+     androidTestImplementation testDependecies.runner
+    androidTestImplementation testDependecies.espresso
+}
